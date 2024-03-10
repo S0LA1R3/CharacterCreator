@@ -4,6 +4,17 @@ const register = document.getElementById('register');
 const next = document.getElementById('next');
 const inputs = document.getElementsByClassName('inp');
 const buttons = document.getElementsByClassName('but');
+let logi = document.getElementById('user');
+let password = document.getElementById('password');
+
+class User {
+    constructor(login, password) {
+        this.login = login;
+        this.password = password;
+    }
+}
+
+let users = []
 
 buttons[0].addEventListener('click', (event) => {
     event.preventDefault();
@@ -39,4 +50,45 @@ buttons[1].addEventListener('click', (event) => {
         inputs[1].classList.add('show');
         next.classList.add('show');
     }, 50);
+})
+
+next.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    if(login.style.display == 'flex') {
+
+        users.forEach(function(user) {
+            console.log(logi.value)
+            console.log(user.login)
+            console.log(password.value)
+            console.log(user.password)
+
+            if(logi.value === user.login && password.value === user.password) {
+                window.location.href = 'html/characterCreator.html';
+            }
+
+        })
+
+    } else {
+        users.push(new User(logi.value, password.value));
+        console.log(users)
+
+        welcome.style.display = 'block';
+        buttons[0].style.display = 'block';
+        buttons[1].style.display = 'block';
+        register.style.display = 'none';
+        inputs[0].style.display = 'none';
+        inputs[1].style.display = 'none';
+        next.style.display = 'none';
+
+        setTimeout(() => {
+            welcome.classList.add('show');
+            buttons[0].classList.add('show');
+            buttons[1].classList.add('show');
+        }, 50);
+
+    }
+
+    logi.value = '';
+    password.value = '';
 })

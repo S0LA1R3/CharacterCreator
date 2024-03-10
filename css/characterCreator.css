@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('caminho/para/o/arquivo/inter-regular.woff2') format('woff2'),
+         url('caminho/para/o/arquivo/inter-regular.woff') format('woff');
+}
+
+@keyframes expand {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+body {
+    display: flex;
+    background: url(../imgs/backgrounds/background-creator.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    background-color: #d69d67f3;
+    justify-content: center;
+    align-items: center;
+}
+
+.except-title {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    color: #3D2B1B;
+    font-weight: 600;
+    text-shadow: 2px 4px 4px #00000081;
+}
+
+#title {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 2px 4px 4px #00000081;
+    color: #3D2B1B;
+    padding-left: 600px;
+    padding-right: 600px;
+}
+
+#hello {
+    padding-right: 5px;
+}
+
+
+#exit {
+    background-color: transparent;
+    border: none;
+}
+
+#exit:hover {
+    cursor: pointer;
+    animation: expand 0.3s ease-out forwards;
+}
+
+section {
+    display: flex;
+    background-color: #bca872d0;
+    width: 10vw;
+    height: 27vh;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 4px #00000071;
+    margin-top: 120px;
+    margin-left: 90px;
+}
+
+section:hover {
+    cursor: pointer;
+    animation: expand 0.3s ease-out forwards;
+}
