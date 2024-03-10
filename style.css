@@ -144,6 +144,21 @@ body {
     transform: scale(1.1);
 }
 
+.show {
+    animation: aparecimento2 1.2s ease-out forwards;
+}
+
+@keyframes aparecimento2 {
+    from {
+        opacity: 0;
+        transform: (0.9);
+    }
+    to {
+        opacity: 1;
+        transform: (1);
+    }
+}
+
 @font-face {
     font-family: 'Inter';
     font-style: normal;

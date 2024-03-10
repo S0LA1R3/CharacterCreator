@@ -14,6 +14,13 @@ buttons[0].addEventListener('click', (event) => {
     inputs[0].style.display = 'flex';
     inputs[1].style.display = 'flex';
     next.style.display = 'block';
+
+    setTimeout(() => {
+        register.classList.add('show');
+        inputs[0].classList.add('show');
+        inputs[1].classList.add('show');
+        next.classList.add('show');
+    }, 50);
 })
 
 buttons[1].addEventListener('click', (event) => {
@@ -25,4 +32,11 @@ buttons[1].addEventListener('click', (event) => {
     inputs[0].style.display = 'flex';
     inputs[1].style.display = 'flex';
     next.style.display = 'block';
+
+    setTimeout(() => {
+        login.classList.add('show');
+        inputs[0].classList.add('show');
+        inputs[1].classList.add('show');
+        next.classList.add('show');
+    }, 50);
 })
