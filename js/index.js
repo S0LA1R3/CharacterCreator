@@ -58,10 +58,6 @@ next.addEventListener('click', (event) => {
     if(login.style.display == 'flex') {
 
         users.forEach(function(user) {
-            console.log(logi.value)
-            console.log(user.login)
-            console.log(password.value)
-            console.log(user.password)
 
             if(logi.value === user.login && password.value === user.password) {
                 window.location.href = 'html/characterCreator.html';
@@ -71,7 +67,6 @@ next.addEventListener('click', (event) => {
 
     } else {
         users.push(new User(logi.value, password.value));
-        console.log(users)
 
         welcome.style.display = 'block';
         buttons[0].style.display = 'block';
