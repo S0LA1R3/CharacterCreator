@@ -139,7 +139,6 @@ next.addEventListener('click', (event) => {
     cards.insertBefore(newCard, cards.firstChild);
 
     name.value = '';
-    clas.value = 'Warrior';
 
     black.style.display = 'none';
     creation.style.display = 'none';
