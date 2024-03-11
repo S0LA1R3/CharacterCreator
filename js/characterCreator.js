@@ -76,6 +76,7 @@ next.addEventListener('click', (event) => {
 
     const cname = document.createElement('span');
     cname.innerHTML = name.value;
+    cname.style.textTransform ='capitalize';
     namediv.appendChild(cname);
 
     const classdiv = document.createElement('div');
@@ -90,6 +91,7 @@ next.addEventListener('click', (event) => {
 
     const cclass = document.createElement('span');
     cclass.innerHTML = clas.value;
+    cclass.style.textTransform ='capitalize';
     classdiv.appendChild(cclass);
 
     infos.appendChild(namediv);
@@ -137,6 +139,7 @@ next.addEventListener('click', (event) => {
     cards.insertBefore(newCard, cards.firstChild);
 
     name.value = '';
+    clas.value = 'Warrior';
 
     black.style.display = 'none';
     creation.style.display = 'none';
