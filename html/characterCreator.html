@@ -8,16 +8,35 @@
     <link rel="icon" href="../imgs/icon.png">
 </head>
 <body>
+    <div id="black"></div>
+    <section id="creation">
+        <span id="ctitle">Character Creation</span>
+        <div class="inp">
+            <label for="cname">Name</label>
+            <input id="cname" autocomplete="off">
+        </div>
+        <div class="inp">
+            <label for="cclass">Class</label>
+            <select id="cclass">
+                <option value="warrior">Warrior</option>
+                <option value="sorcerer">Sorcerer</option>
+                <option value="rogue">Rogue</option>
+                <option value="cleric">Cleric</option>
+            </select>
+        </div>
+        <span id="next">></span>
+    </section>
     <header>
         <span class="except-title" id="hello">Hello</span>
         <span class="except-title" id="name">Roger!</span>
         <span id="title">Character Creator</span>
         <button class="except-title" id="exit">Exit</button>
     </header>
-    <main>
-        <section>
+    <main id="cards">
+        <section id="card">
             <img src="../imgs/crosshair.png">
         </section>
     </main>
+    <script src="../js/characterCreator.js"></script>
 </body>
 </html>
