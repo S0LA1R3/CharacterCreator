@@ -6,6 +6,7 @@ const next = document.getElementById('next');
 const name = document.getElementById('cname');
 const clas = document.getElementById('cclass');
 const title = document.getElementById('ctitle');
+const exit = document.getElementById('exit');
 
 card.addEventListener('click', (event) => {
     event.preventDefault();
@@ -141,3 +142,6 @@ next.addEventListener('click', (event) => {
     creation.style.display = 'none';
 })
 
+exit.addEventListener('click', () => {
+    window.location.href = '../index.html';
+})
