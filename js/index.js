@@ -4,6 +4,7 @@ const register = document.getElementById('register');
 const next = document.getElementById('next');
 const inputs = document.getElementsByClassName('inp');
 const buttons = document.getElementsByClassName('but');
+
 let logi = document.getElementById('user');
 let password = document.getElementById('password');
 
